@@ -10,7 +10,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         /** Using the MainRepository with the chosen arguments **/
-        // val repo = MainRepository(.. , ..)
+        // val repo = MainRepository( FirebaseAuthentication() , CustomErrorFileLogger() )
+         val repo = MainRepository( APIAuthentication() , CustomErrorFileLogger() )
 
     }
 }
